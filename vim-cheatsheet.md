@@ -1,7 +1,7 @@
 # Vim Cheatsheet
 
 ## Most Important
-```bash
+```
 :w              @ save file
 :wq or :x or ZZ @ save and quit
 :q              @ quit
@@ -13,7 +13,7 @@
 ```
 
 ## Cursor movement
-```bash
+```
 h        @ move cursor left
 j        @ move cursor down
 k        @ move cursor up
@@ -46,7 +46,7 @@ Ctrl + u @ move back 1/2 a screen
 ```
 
 ## Insert mode - inserting/appending text
-```bash
+```
 i        @ insert before the cursor
 I        @ insert at the beginning of the line
 a        @ insert (append) after the cursor
@@ -58,7 +58,7 @@ Esc      @ exit insert mode
 ```
 
 ## Editing
-```bash
+```
 r        @ replace a single character
 J        @ join line below to the current one
 cc       @ replace entire line
@@ -76,7 +76,7 @@ Ctrl + r @ redo
 ```
 
 ## Marking text (visual mode)
-```bash
+```
 v        @ start visual mode, mark lines, then do a command (like y-yank)
 V        @ start linewise visual mode
 o        @ move to other end of marked area
@@ -91,7 +91,7 @@ Ctrl + v @ start visual block mode
 ```
 
 ## Visual commands
-```bash
+```
 >       @ shift text right
 <       @ shift text left
 y       @ yank (copy) marked text
@@ -100,7 +100,7 @@ d       @ delete marked text
 ```
 
 ## Cut and paste
-```bash
+```
 yy       @ yank (copy) a line
 2yy      @ yank (copy) 2 lines
 yw       @ yank (copy) the characters of the word from the cursor position to the start of the next word
@@ -118,7 +118,7 @@ x        @ delete (cut) character
 ```
 
 ## Search and replace
-```bash
+```
 /pattern       @ search for pattern
 ?pattern       @ search backward for pattern
 \vpattern      @ 'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)
@@ -130,15 +130,15 @@ N              @ repeat search in opposite direction
 ```
 
 ## Search in multiple files
-```bash
-:bashgrep /pattern/ {file} @ search for pattern in multiple files
+```
+:grep /pattern/ {file} @ search for pattern in multiple files
 :cn                       @ jump to the next match
 :cp                       @ jump to the previous match
 :copen                    @ open a window containing the list of matches
 ```
 
 ## Working with multiple files
-```bash
+```
 :e file       @ edit a file in a new buffer
 :bnext or :bn @ go to the next buffer
 :bprev or :bp @ go to the previous buffer
@@ -157,7 +157,7 @@ Ctrl + wk     @ move cursor to the window above (horizontal split)
 ```
 
 ## Tabs
-```bash
+```
 :tabnew or :tabnew file @ open a file in a new tab
 Ctrl + wT               @ move the current split window into its own tab
 gt or :tabnext or :tabn @ move to the next tab
